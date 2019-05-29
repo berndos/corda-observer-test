@@ -1,0 +1,10 @@
+include 'states'
+include 'flows'
+include 'tests'
+
+rootProject.name = 'corda-observer-test'
+
+project(":states").name = "states"
+project(":flows").name = "flows"
+
+enableFeaturePreview('STABLE_PUBLISHING')

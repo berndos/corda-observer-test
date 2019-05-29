@@ -1,0 +1,9 @@
+apply plugin: 'net.corda.plugins.quasar-utils'
+
+dependencies {
+    testCompile project(":flows")
+    testCompile project(":states")
+
+    testCompile "junit:junit:4.12"
+    testCompile "net.corda:corda-node-driver:$corda_release_version"
+}
